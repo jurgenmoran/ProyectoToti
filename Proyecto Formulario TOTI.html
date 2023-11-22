@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&family=Secular+One&display=swap">
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Projeto pesquisa satistafação</title>
+
+  </head>
+  <body>
+    <div>
+      <header>
+        <div class="barra"></div>
+        <h1> Formulario de Pesquisa</h1>
+        <h4>Obrigado por dedicar seu tempo para nos ajudar a melhorar</h4>
+      </header>
+    </div>
+      <form id="formulario-pesquisa">
+        <div class="form-grupo">
+          <label id="etiqueta-nome" for="nome">Nome Completo</label>
+          <input type="texto" name="nome" id="nome" class="form-control" placeholder="Coloque seu nome" required />
+        </div>
+        <div class="form-grupo">
+          <label id="etiqueta-email" for="email">Email</label>
+          <input type="Email" name="email" id="email" class="form-control" placeholder="Ingrese seu Email" required />
+        </div>
+        <div class="form-grupo">
+          <label id="etiqueta-numero" for="number"> Idade <span class="dica">(Opcional)</span></label>
+          <input type="number" name="idade" id="number" min="10" max="99" class="form-control" placeholder="Idade">
+        </div>
+        <div class="form-grupo">
+          <p> Qual das opções abaixo descreve sua situação atual</p>
+          <select name="ocupação" required>
+            <option diabled select value> Selecione uma opção</option>
+            <option value="estudante">Estudante</option>
+            <option value="trabalho">Trabalho de Periodo Completo</option>
+            <option value="estagio">Estagio</option>
+            <option value="prefiro-no">Prefiro Não Informar</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+        <div class="form-grupo">
+          <p> Você recomendaria essa empresa para um amigo?</p>
+          <label>
+            <input type="radio" name="recomendaçao" value="definitivamente">Definitivamente 
+          </label>
+          <label>
+            <input type="radio" name="recomendaçao" value="talvez">Talvez
+          </label>
+          <label>
+            <input type="radio" name="recomendaçao" value="nunca">Nunca
+          </label>
+        </div>
+        <div class="form-grupo">
+          <p>
+            Qual é o seu recurso favorito dessa empresa?
+          </p>
+          <select name="amei" required>
+            <option diabled select value>Selecione uma opção</option>
+            <option value="Desafios">Desafios</option>
+            <option value="Projetos">Projetos</option>
+            <option value="Comunidade">Comunidade</option>
+            <option value="Codigo aberto">Codigo aberto</option>
+          </select>
+        </div>
+        <div class="form-grupo">
+          <p>
+            O que você gostaria de ter melhorado?
+            <span class="dica">
+             (Marque todas as opções aplicaveis)
+            </span>
+          </p>
+          <label>
+            <input name="preferencia" value="projetos front-end" type="checkbox" class="input-checkbox" />Projetos Front-End
+          </label>
+          <label> 
+            <input name="preferencia" value="projetos back-end" type="checkbox" class="input-checkbox" />Projetos Back End
+          </label>
+          <label>
+            <input name="preferencias" value="visualização de dados" type="checkbox" class="input-checkbox" />Visualização de dados
+          </label>
+          <label>
+            <input name="preferencias" value="desafios" type="checkbox" class="input-checkbox" />Desafios
+          </label>
+          <label>
+            <input name="preferencias" value="comunidade-codigo-aberto" type="checkbox" class="input-checkbox" />Comunidade Codigo Aberto
+          </label>
+          <label>
+            <input name="Preferencias" value="salas-ajuda-gitter" type="checkbox" class="input-checkbox" />Salas de Ajuda do Git
+          </label>
+          <label>
+            <input name="preferencias" value="Videos" type="checkbox" class="input-checkbox" />Videos
+          </label>
+          <label>
+            <input name="preferencias" value="cursos-adicionais" type="checkbox" class="input-checkbox" />Cursos Adicionais
+          </label>
+        </div>
+        <div class="form-grupo">
+          <p>
+            Algum comentário ou sugestão?
+          </p>
+          <textarea id="comentarios" class="input-area" name="comentarios" placeholder="Deixe seu comentario aqui..."></textarea>
+        </div>
+        <div class="boton-submit">
+          <button type="submit">Enviar</buttom>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
